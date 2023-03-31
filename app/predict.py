@@ -42,7 +42,7 @@ def predict(student):
     # Use Pydantic to validate model fields exist
     student = parse_obj_as(Student, student)
 
-    clf = joblib.load('./model.pkl')
+    clf = joblib.load('app/model.pkl')
     
     student = student.dict(by_alias=True)
     query = pd.DataFrame(student, index=[0])

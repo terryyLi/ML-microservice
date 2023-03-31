@@ -1,16 +1,12 @@
-# fly.toml file generated for ml-microservice on 2023-03-31T14:01:45-04:00
+# fly.toml file generated for ml-micro on 2023-03-31T15:14:03-04:00
 
-app = "ml-microservice"
+app = "ml-micro"
 kill_signal = "SIGINT"
 kill_timeout = 5
-primary_region = "dfw"
+primary_region = "iad"
 processes = []
 
-[build]
-  builder = "paketobuildpacks/builder:base"
-
 [env]
-  PORT = "8080"
 
 [experimental]
   auto_rollback = true
