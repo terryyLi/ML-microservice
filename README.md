@@ -1,7 +1,7 @@
 # Career Recruiter ML Model Framework
 
 ## Overview
-This folder contains an ML model for predicting whether a student applicant would be a good employee, along with some basic starter code for how to interact with the model.
+This repo contains an ML model for predicting whether a student applicant would be a good employee, along with some basic starter code for how to interact with the model.
 
 This model should eventually be connected with the career page within NodeBB to allow recruiters to view a prediction of a student applicant's likeliness to be a good employee to hire.
 
@@ -29,22 +29,4 @@ Below is a sample run from the terminal:
 >>> predict(student)
 {'good_employee': 1}
 ```
-
-## Function Inputs
-The `predict` function takes in a student info dictionary that contains the following fields (note that all fields are taken as a `string` value and parsed by the model itself):
-
-- `student_id`: unique identifier for the student
-- `major`: major of the student
-    - Computer Science, Information Systems, Business, Math, Electrical and Computer Engineering, Statistics and Machine Learning
-- `age`: age of the student, [18, 25]
-- `gender`: gender of the student, M(ale)/F(emale)/O(ther)
-- `gpa`: gpa of the student, [0.0, 4.0]
-- `extra_curricular`: the most important extracurricular activity to the student
-    -  Student Theatre, Buggy, Teaching Assistant, Student Government, Society of Women Engineers, Women in CS, Volleyball, Sorority, Men's Basketball, American Football, Men's Golf, Fraternity
-- `num_programming_languages`: number of programming languages that the student is familiar with, [1, 5]
-- `num_past_internships`: number of previous internships that the student has had, [0, 4]
-
-## Function Outputs
-The `predict` function returns a prediction result dictionary containing the following:
-
-- `good_employee`: int, 1 if the student is predicted to be a good employee, 0 otherwise
+Can also try on: https://ml-micro.fly.dev/docs
